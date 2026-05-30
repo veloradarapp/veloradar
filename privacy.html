@@ -10,6 +10,13 @@
   <meta property="og:url" content="https://veloradar.app/privacy.html">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/privacy.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,7 +25,15 @@
 <body>
 <nav>
   <a class="nav-logo" href="/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
-  <a class="nav-back" href="/">← Home</a>
+  <div class="nav-right">
+    <a class="nav-back" href="/">← Home</a>
+    <div class="lang-switch" aria-label="Language">
+      <a href="/privacy.html" class="active" lang="en">EN</a>
+      <a href="/fr/privacy.html" lang="fr">FR</a>
+      <a href="/de/privacy.html" lang="de">DE</a>
+      <a href="/ru/privacy.html" lang="ru">RU</a>
+    </div>
+  </div>
 </nav>
 <main>
   <aside class="toc" aria-label="Document sections">

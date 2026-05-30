@@ -56,3 +56,20 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:40px;text
   .toc ul{flex-direction:row;flex-wrap:wrap;gap:6px 16px}
 }
 @media(max-width:560px){nav{padding:0 16px}main{padding:40px 16px 80px}}
+
+/* Language switcher (legal pages) */
+.lang-switch {
+  display: flex; align-items: center; gap: 2px;
+  margin-left: 14px;
+}
+.lang-switch a {
+  font-size: 12px; font-weight: 600; text-decoration: none;
+  color: var(--text3); padding: 6px 8px; border-radius: 6px;
+  letter-spacing: .04em; transition: color .15s, background .15s;
+}
+.lang-switch a:hover { color: var(--text); }
+.lang-switch a.active { color: var(--green); background: rgba(48,209,88,.08); }
+.nav-right { display: flex; align-items: center; gap: 4px; }
+@media (max-width: 560px) {
+  .lang-switch a { padding: 5px 6px; font-size: 11px; }
+}
