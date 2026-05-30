@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeloRadar - E-Bike-Cockpit mit Heckradar</title>
+  <meta name="description" content="Mach dein iPhone zum echten Lenker-Cockpit für Bafang-BBS02-E-Bikes mit EKD01-BF-Display. Live-Telemetrie, Garmin-Varia-Heckradar, GPX-Navigation, Apple Watch.">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VeloRadar - E-Bike-Cockpit mit Heckradar">
+  <meta property="og:description" content="Live-Telemetrie, Garmin-Varia-Heckradar, GPX-Navigation und Apple-Watch-Begleiter für dein Bafang-E-Bike.">
+  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://veloradar.app/de/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VeloRadar - E-Bike-Cockpit mit Heckradar">
+  <meta name="twitter:description" content="Live-Telemetrie, Garmin-Varia-Heckradar, GPX-Navigation und Apple-Watch-Begleiter.">
+  <meta name="twitter:image" content="https://veloradar.app/assets/og-image.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/">
+
+  <!-- Web fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "VeloRadar",
+    "operatingSystem": "iOS 17.0",
+    "applicationCategory": "SportsApplication",
+    "description": "iPhone-Cockpit für Bafang-E-Bikes mit EKD01-BF-Display. Live-Telemetrie, Garmin-Varia-Heckradar, GPX-Navigation und Apple-Watch-Begleiter.",
+    "url": "https://veloradar.app/de/",
+    "image": "https://veloradar.app/assets/og-image.png",
+    "inLanguage": "de",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "VeloRadar",
+      "url": "https://veloradar.app",
+      "email": "support@veloradar.app"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/landing.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/de/" aria-label="VeloRadar Startseite">
+    <img src="/assets/icon.png" alt="">
+    <span>VeloRadar</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#features">Funktionen</a></li>
+    <li><a href="#compare">Vergleich</a></li>
+    <li><a href="#compatibility">Hardware</a></li>
+    <li><a href="#privacy">Datenschutz</a></li>
+    <li><a href="/de/support.html">Support</a></li>
+  </ul>
+  <a class="nav-cta" href="#download">App holen</a>
+  <div class="lang-switch" aria-label="Sprache">
+    <a href="/" lang="en">EN</a>
+    <a href="/fr/" lang="fr">FR</a>
+    <a href="/de/" class="active" lang="de">DE</a>
+    <a href="/ru/" lang="ru">RU</a>
+    <a href="/it/" lang="it">IT</a>
+  </div>
+  <button class="nav-burger" aria-label="Menü öffnen" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <ul>
+    <li><a href="#features" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Funktionen</a></li>
+    <li><a href="#compare" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Vergleich</a></li>
+    <li><a href="#compatibility" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Hardware</a></li>
+    <li><a href="#privacy" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Datenschutz</a></li>
+    <li><a href="/de/support.html">Support</a></li>
+    <li><a href="#download" onclick="document.querySelector('.mobile-menu').classList.remove('open')">App holen</a></li>
+    <li style="padding-top:12px;border-top:1px solid var(--border);margin-top:8px;font-size:13px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase">Sprache</li>
+    <li><a href="/" lang="en">English</a></li>
+    <li><a href="/fr/" lang="fr">Français</a></li>
+    <li><a href="/de/" lang="de">Deutsch</a></li>
+    <li><a href="/ru/" lang="ru">Русский</a></li>
+    <li><a href="/it/" lang="it">Italiano</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge"><span class="dot"></span> Bald im App Store</div>
+  <h1>Sieh dein E-Bike.<br>Sieh, was <span class="accent">hinter dir ist.</span></h1>
+  <p>Das Fahrrad-Cockpit für Bafang BBS02 mit EKD01-BF-Display. Live-Telemetrie, Heckradar von Garmin Varia, GPX-Navigation - alles auf dem iPhone, das du sowieso dabei hast.</p>
+  <div class="hero-actions">
+    <a class="btn-primary" href="mailto:support@veloradar.app?subject=Notify%20me%20when%20VeloRadar%20launches">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+      Beim Start benachrichtigen
+    </a>
+    <a class="btn-secondary" href="#features">Funktionen ansehen</a>
+  </div>
+
+  <!-- Hero visual: honest, no fake screenshot -->
+  <div class="hero-visual">
+    <div class="hero-illust">
+      <svg viewBox="0 0 96 96" fill="none" aria-hidden="true">
+        <rect x="22" y="18" width="52" height="78" rx="9" stroke="#30d158" stroke-width="2.5" fill="rgba(48,209,88,0.04)"/>
+        <rect x="28" y="26" width="40" height="58" rx="3" stroke="#30d158" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.5"/>
+        <text x="48" y="58" text-anchor="middle" fill="#30d158" font-family="Inter, sans-serif" font-size="9" font-weight="600">VORSCHAU</text>
+        <text x="48" y="70" text-anchor="middle" fill="#30d158" font-family="Inter, sans-serif" font-size="6" opacity="0.7">BALD</text>
+      </svg>
+      <h3>Echte Screenshots folgen nach dem Launch</h3>
+      <p>Wir basteln keine Fake-Screens. Die App ist in den letzten Feldtests - sobald sie im App Store ist, gibt es hier Bilder aus echten Fahrten.</p>
+      <span class="small">Ehrlich von Anfang an</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <div style="max-width:1140px;margin:0 auto">
+    <div class="section-label">Funktionen</div>
+    <div class="section-title">Alles, was du brauchst.<br>Nichts, was du nicht brauchst.</div>
+    <p class="section-sub">Große Zahlen, minimale Deko - mit einem Blick vom Lenker ablesbar, auch bei Tempo.</p>
+    <div class="features-grid">
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="14" height="10" rx="2"/><rect x="6" y="11" width="8" height="4" fill="#30d158" stroke="none"/><path d="M17 11h2v4h-2"/></svg>
+        </div>
+        <h3>Echter Akku &amp; echte Reichweite</h3>
+        <p>Live-Spannung vom Controller, abgeglichen mit einer echten 13S-Li-Ion-Entladekurve. 84 % heißen wirklich 84 %. Die Reichweite passt sich deiner Fahrzeit, dem Energieverbrauch und der Leistung an - kein starrer Schätzwert.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/><path d="M12 12l5-5" stroke-width="2.4"/></svg>
+        </div>
+        <h3>Live-Telemetrie</h3>
+        <p>Spannung, Strom, Leistung, Tempo, ODO, TRIP, PAS-Stufe - direkt vom EKD01-BF per Bluetooth. Keine Kalibrierung. Keine Begleiter-App. Identisch zum Display am Rad.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="14" height="8" rx="3" fill="#30d158" stroke="none"/><rect x="9" y="16" width="4" height="3" rx="1" fill="#30d158" stroke="none"/><path d="M18 10c0 2-1 4-1 4M20 8c0 4-2 6-2 6M22 6c0 6-3 8-3 8" opacity="0.7"/></svg>
+        </div>
+        <h3>Heckradar</h3>
+        <p>Funktioniert mit jedem Garmin-Varia-Radar. Sieh Autos, bevor du sie hörst - Abstand, Tempo und ein haptischer Alarm, sobald eins in deine Warnzone fährt.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>
+        </div>
+        <h3>GPX-Navigation</h3>
+        <p>Importiere jede Route aus Mapy.cz, Komoot, Strava oder Dateien. Abbiegehinweise per Ton. Direction View hält die Straße im Blick; ein Tipp zeigt die ganze Route flach.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><path d="M9 1h6M9 23h6" stroke-width="2"/></svg>
+        </div>
+        <h3>Apple Watch</h3>
+        <p>Ein Blick aufs Handgelenk - Akku, Reichweite, Warnung vor Autos von hinten. Haptische Muster lassen dich ein nahendes Fahrzeug spüren, ohne den Blick von der Straße zu nehmen.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2.5A4 4 0 0119 10c0 6.5-7 11-7 11z" fill="#30d158" stroke="none"/></svg>
+        </div>
+        <h3>Apple-Health-Synchronisation</h3>
+        <p>Jede abgeschlossene Fahrt landet als Radtraining in Apple Health, inklusive vollständiger GPS-Route. Opt-in, auf dem Gerät. Deine Daten bleiben deine.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="#30d158" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+        </div>
+        <h3>Wettervorhersage</h3>
+        <p>Aktuelle Temperatur und die nächsten 12 Stunden über Apple WeatherKit - direkt in der oberen Leiste, aktualisiert während der Fahrt. Keine Drittanbieter-Wetter-APIs.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 010 18z" fill="#30d158" stroke="none"/></svg>
+        </div>
+        <h3>Helles &amp; dunkles Design</h3>
+        <p>Dunkel für Nachtfahrten (Neon-Cockpit), hell für grelles Tageslicht (ruhige, lesbare Farben) oder automatisch dem System folgen. Optimiert für gute Lesbarkeit am Lenker.</p>
+      </div>
+
+      <div class="fc">
+        <div class="fc-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V11M11 21V7M16 21V14M21 21V4"/></svg>
+        </div>
+        <h3>Fahrtstatistiken</h3>
+        <p>Strecke, Zeit, Schnitt/Höchstgeschwindigkeit, Energie (Wh), Leistung, Höhenmeter, Temperatur, PAS-Verteilung - für die aktuelle Fahrt und die letzten 10. Jede als GPX exportierbar.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="compare-section" id="compare">
+  <div class="compare-wrap">
+    <div class="section-label">Im Vergleich</div>
+    <div class="section-title">Warum nicht einfach<br>BikeGo oder Strava?</div>
+    <p class="section-sub">Jede Fahrrad-App macht einen Teil von dem, was VeloRadar leistet. Keine macht alles auf einem Bildschirm.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="us">VeloRadar</th>
+          <th>BikeGo</th>
+          <th>Garmin Connect</th>
+          <th>Strava</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="feat">Liest EKD01-BF-Display</td><td class="check">✓ Live V/W/%</td><td class="partial">Nur Basics</td><td class="cross">-</td><td class="cross">-</td></tr>
+        <tr><td class="feat">Akku-% aus echter Kurve</td><td class="check">✓</td><td class="cross">Grobe 4 Balken</td><td class="cross">-</td><td class="cross">-</td></tr>
+        <tr><td class="feat">Adaptive Reichweite (Wh-basiert)</td><td class="check">✓</td><td class="cross">-</td><td class="cross">-</td><td class="cross">-</td></tr>
+        <tr><td class="feat">Garmin-Varia-Radar</td><td class="check">✓ Alle Modelle</td><td class="cross">-</td><td class="check">✓</td><td class="cross">-</td></tr>
+        <tr><td class="feat">GPX-Import + Abbiegehinweise</td><td class="check">✓</td><td class="partial">Kostenpflichtig</td><td class="check">✓</td><td class="partial">Nur Web</td></tr>
+        <tr><td class="feat">Apple-Health-Trainings</td><td class="check">✓ Mit Route</td><td class="cross">-</td><td class="partial">Über Export</td><td class="check">✓</td></tr>
+        <tr><td class="feat">Apple-Watch-Begleiter</td><td class="check">✓</td><td class="cross">-</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td class="feat">Live Activity / Dynamic Island</td><td class="check">✓</td><td class="cross">-</td><td class="cross">-</td><td class="cross">-</td></tr>
+        <tr><td class="feat">Kein Konto nötig</td><td class="check">✓</td><td class="cross">Anmeldung</td><td class="cross">Anmeldung</td><td class="cross">Anmeldung</td></tr>
+        <tr><td class="feat">Kein Tracking, keine Analyse</td><td class="check">✓</td><td class="cross">-</td><td class="cross">-</td><td class="cross">-</td></tr>
+        <tr><td class="feat">Kostenlos, ohne Abos</td><td class="check">✓</td><td class="partial">Freemium</td><td class="check">✓</td><td class="partial">Freemium</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- COMPATIBILITY -->
+<section class="compat-section" id="compatibility">
+  <div class="compat-inner">
+    <div>
+      <div class="section-label">Kompatibilität</div>
+      <div class="section-title">Gebaut für Bafang BBS02<br>mit EKD01-BF.</div>
+      <p class="section-sub">Ein bestimmtes Setup, richtig gut gemacht. Wenn du einen Bafang BBS01/BBS02/BBSHD-Motor mit dem EKD01-BF-Bluetooth-Display hast, ist diese App für dich.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h4>iPhone montieren</h4>
+            <p>Jede Lenkerhalterung funktioniert. Große Zahlen und minimaler Schnickschnack - so siehst du beim Fahren alles auf einen Blick.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h4>Mit dem Display verbinden</h4>
+            <p>VeloRadar verbindet sich automatisch per Bluetooth mit deinem EKD01-BF. Keine Pairing-Codes, keine Begleiter-App.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h4>Route importieren (optional)</h4>
+            <p>Teile eine GPX-Datei aus Mapy.cz, Komoot, Strava oder einer beliebigen Fahrrad-App. Karte antippen und losfahren.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="compat-pills">
+      <div class="cp">
+        <span class="ci">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="9" cy="22" r="6" stroke="#30d158" stroke-width="2"/>
+            <circle cx="23" cy="22" r="6" stroke="#30d158" stroke-width="2"/>
+            <path d="M9 22l7-10 7 10M16 12l-3-3h4l3 3" stroke="#30d158" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div><h5>Bafang BBS01 / BBS02 / BBSHD</h5><p>Mittelmotor · Jede Laufradgröße</p></div>
+      </div>
+      <div class="cp">
+        <span class="ci">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="5" y="10" width="22" height="14" rx="2" stroke="#30d158" stroke-width="2"/>
+            <rect x="8" y="13" width="16" height="8" rx="1" fill="#30d158" opacity="0.15"/>
+            <text x="16" y="19" text-anchor="middle" fill="#30d158" font-family="Inter,sans-serif" font-size="7" font-weight="700">EKD</text>
+          </svg>
+        </span>
+        <div><h5>EKD01-BF-Display</h5><p>Auch verkauft als Varstrom EKD01</p></div>
+      </div>
+      <div class="cp opt">
+        <span class="ci">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="6" y="11" width="16" height="10" rx="5" fill="#a1a1b5"/>
+            <rect x="13" y="21" width="4" height="3" rx="1" fill="#a1a1b5"/>
+            <path d="M24 13c0 3-2 5-2 5" stroke="#30d158" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M27 11c0 5-3 8-3 8" stroke="#30d158" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+            <path d="M30 9c0 7-4 11-4 11" stroke="#30d158" stroke-width="1.8" stroke-linecap="round" opacity="0.3"/>
+          </svg>
+        </span>
+        <div><h5>Garmin Varia Radar</h5><p>Alle Varia-Modelle · Bluetooth LE</p></div>
+        <span class="opt-badge">Optional</span>
+      </div>
+      <div class="cp opt">
+        <span class="ci">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="9" y="6" width="14" height="20" rx="3" stroke="#30d158" stroke-width="2"/>
+            <circle cx="16" cy="16" r="4" stroke="#30d158" stroke-width="1.5"/>
+            <path d="M14 3h4M14 29h4" stroke="#30d158" stroke-width="2"/>
+          </svg>
+        </span>
+        <div><h5>Apple Watch</h5><p>watchOS 11+ · Jede Serie</p></div>
+        <span class="opt-badge">Optional</span>
+      </div>
+      <div class="cp">
+        <span class="ci">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="9" y="3" width="14" height="26" rx="3" stroke="#30d158" stroke-width="2"/>
+            <path d="M14 7h4M16 25v.5" stroke="#30d158" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div><h5>iPhone</h5><p>iPhone 12 oder neuer · iOS 17+</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="privacy-section" id="privacy">
+  <div class="privacy-inner">
+    <div class="section-label" style="text-align:center">Datenschutz</div>
+    <div class="section-title" style="text-align:center">Deine Fahrten bleiben<br>auf deinem Handy.</div>
+    <p style="font-size:18px;color:var(--text2);line-height:1.6;margin-top:16px">Keine Server. Keine Konten. Keine Analyse. Keine Werbung. Alles wird auf deinem iPhone gespeichert und landet nur in deinem verschlüsselten Backup.</p>
+    <div class="privacy-pills">
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Keine Konten</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Keine Analyse</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Keine Werbung</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Keine Drittanbieter-SDKs</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Keine Cloud-Speicherung</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Nur Apple WeatherKit</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Health-Sync ist Opt-in</div>
+      <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Kostenlos · Keine In-App-Käufe</div>
+    </div>
+    <p style="margin-top:32px;font-size:15px;color:var(--text2)">
+      <a href="/de/privacy.html" style="color:var(--green);text-decoration:none;font-weight:600">Vollständige Datenschutzerklärung lesen →</a>
+    </p>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="dl-section" id="download">
+  <div class="dl-inner">
+    <img class="dl-icon" src="/assets/icon.png" alt="VeloRadar-Symbol">
+    <div class="section-title">Bald im App Store</div>
+    <p style="font-size:18px;color:var(--text2);margin-top:14px">VeloRadar ist in den letzten Feldtests. Die App wird im App Store kostenlos sein - keine In-App-Käufe, keine Abos.</p>
+    <div class="as-btn-wrap">
+      <span class="as-btn" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+        <div class="as-text">
+          <div class="as-sub">Bald im</div>
+          <div class="as-main">App Store</div>
+        </div>
+      </span>
+      <a class="dl-notify" href="mailto:support@veloradar.app?subject=Notify%20me%20when%20VeloRadar%20launches">
+        Mich beim Start per E-Mail benachrichtigen →
+      </a>
+    </div>
+    <p style="margin-top:24px;font-size:14px;color:var(--text3)">Setzt iPhone 12 oder neuer voraus · iOS 17+ · Kostenlos</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a class="f-logo" href="/de/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
+  <ul class="f-links">
+    <li><a href="/de/privacy.html">Datenschutz</a></li>
+    <li><a href="/de/terms.html">Nutzungsbedingungen</a></li>
+    <li><a href="/de/safety.html">Sicherheit</a></li>
+    <li><a href="/de/support.html">Support</a></li>
+    <li><a href="/de/changelog.html">Versionen</a></li>
+    <li><a href="/de/roadmap.html">Roadmap</a></li>
+    <li><a href="mailto:support@veloradar.app">Kontakt</a></li>
+  </ul>
+  <p class="f-copy">© 2026 VeloRadar. Unabhängige App für Bafang-BBS02-Fahrer. Entwickelt in Tschechien. Nicht mit Bafang, Huiye, Varstrom, Garmin oder Apple verbunden.</p>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="#download">📬 <strong>Beim Start benachrichtigen</strong></a>
+</div>
+
+</body>
+</html>

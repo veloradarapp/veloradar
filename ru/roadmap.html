@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Планы развития - VeloRadar</title>
+  <meta name="description" content="Что появится в VeloRadar дальше.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="Планы развития - VeloRadar">
+  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
+  <meta property="og:url" content="https://veloradar.app/ru/roadmap.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/roadmap.html">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/roadmap.html">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/roadmap.html">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/roadmap.html">
+  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/roadmap.html">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/roadmap.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/legal.css">
+  <style>
+    .road-stage{background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:28px 30px;margin-bottom:20px;position:relative}
+    .road-stage h3{font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:6px}
+    .road-stage .when{font-size:12px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+    .road-stage .when.later{color:var(--text3)}
+    .road-stage p{font-size:14.5px;color:var(--text2);line-height:1.6;margin-bottom:14px}
+    .road-stage ul{list-style:none;padding-left:0}
+    .road-stage li{position:relative;padding:5px 0 5px 22px;font-size:14px;color:var(--text2);line-height:1.55}
+    .road-stage li::before{content:'';position:absolute;left:6px;top:13px;width:6px;height:6px;border-radius:50%;background:var(--green);opacity:.5}
+    .road-stage.future{opacity:.75}
+    .disclaimer{font-size:13px;color:var(--text3);line-height:1.6;padding:16px 20px;background:rgba(255,159,10,.04);border:1px solid rgba(255,159,10,.15);border-radius:12px;margin-bottom:32px}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/ru/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
+  <div class="nav-right">
+    <a class="nav-back" href="/ru/">← Главная</a>
+    <div class="lang-switch" aria-label="Язык">
+      <a href="/roadmap.html" lang="en">EN</a>
+      <a href="/fr/roadmap.html" lang="fr">FR</a>
+      <a href="/de/roadmap.html" lang="de">DE</a>
+      <a href="/ru/roadmap.html" class="active" lang="ru">RU</a>
+      <a href="/it/roadmap.html" lang="it">IT</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <aside class="toc">
+    <div class="toc-label">Этапы</div>
+    <ul>
+      <li><a href="#now">Сейчас - v1.0.2</a></li>
+      <li><a href="#next">Дальше - v1.1</a></li>
+      <li><a href="#later">Позже - v1.2+</a></li>
+      <li><a href="#someday">Когда-нибудь</a></li>
+    </ul>
+  </aside>
+  <div class="doc-content">
+    <div class="doc-header">
+      <div class="doc-badge">Планы</div>
+      <h1>Что дальше</h1>
+      <p class="doc-meta">Регулярно обновляется. Фиксированных дат нет - качество важнее сроков.</p>
+    </div>
+
+    <div class="disclaimer">
+      ⚠️ Планы - это намерения, а не обещания. Порядок может измениться по итогам полевых тестов и запросов реальных райдеров. Мы обновим эту страницу, когда приоритеты сдвинутся.
+    </div>
+
+    <div class="road-stage" id="now">
+      <div class="when">Уже выходит</div>
+      <h3>v1.0.2 - Первый публичный релиз</h3>
+      <p>Всё, что описано на главной странице. Сейчас идут финальные полевые тесты перед отправкой в App Store. <a href="/ru/changelog.html#v102" style="color:var(--green);text-decoration:none;font-weight:600">Полная история версий →</a></p>
+    </div>
+
+    <div class="road-stage" id="next">
+      <div class="when">Дальше</div>
+      <h3>v1.1 - Обучение батареи с помощью ИИ</h3>
+      <p>Персонализированный процент заряда и оценка запаса хода с использованием машинного обучения на устройстве. После ~10-20 поездок VeloRadar начнёт адаптировать разрядную кривую к поведению именно вашей батареи - с учётом старения ячеек, температуры и вашей индивидуальной манеры езды.</p>
+      <ul>
+        <li>Модель Core ML, обучаемая на устройстве - данные не покидают телефон</li>
+        <li>Точность непрерывно растёт по мере того, как вы ездите</li>
+        <li>Уточнённая оценка запаса хода с учётом высот, температуры и ветра</li>
+        <li>Опциональный режим «показывать доверительный интервал» для прозрачности</li>
+      </ul>
+    </div>
+
+    <div class="road-stage" id="later">
+      <div class="when">Позже</div>
+      <h3>v1.2 - Simple View и подсказки во время поездки</h3>
+      <p>Четвёртая страница в приложении: упрощённый Simple View с четырьмя гигантскими цифрами (скорость, %, мощность, запас хода). Сделан так, чтобы читаться с расстояния в метр - и заодно выступать в роли честного героя-скриншота для этого сайта.</p>
+      <ul>
+        <li>Simple View - минималистичный дашборд, читаемый одним взглядом</li>
+        <li>Подсказки в поездке: «вы в 5 км от привычной точки разворота, заряд 42%»</li>
+        <li>Распознавание падений через акселерометр + автоматический SOS в экстренные службы Apple</li>
+        <li>Синхронизация истории поездок через iCloud (по выбору)</li>
+      </ul>
+    </div>
+
+    <div class="road-stage future" id="someday">
+      <div class="when later">Когда-нибудь</div>
+      <h3>За горизонтом</h3>
+      <p>Большие идеи, которые мы хотели бы сделать, но они пока не в приоритете:</p>
+      <ul>
+        <li>Самостоятельное приложение для watchOS - вести поездку только с часов, без iPhone</li>
+        <li>Прямая загрузка в Strava после поездок (сейчас GPX можно отправить вручную)</li>
+        <li>Перестроение маршрута при сходе с трека через API Mapy.cz</li>
+        <li>Поддержка других дисплеев Bafang - APT 580C/600C/750C/860C и DPC181 - если владелец одного из этих дисплеев пришлёт нам Bluetooth-захват с официального приложения</li>
+        <li>Голосовая навигация для подсказок поворотов без рук</li>
+      </ul>
+    </div>
+
+    <p style="font-size:14px;color:var(--text3);line-height:1.6;margin-top:32px">Есть запрос на функцию? <a href="mailto:support@veloradar.app?subject=Feature%20request" style="color:var(--green);text-decoration:none;font-weight:600">Напишите нам</a>. Мы читаем всё.</p>
+  </div>
+</main>
+<footer>
+  <ul class="f-links"><li><a href="/ru/">Главная</a></li><li><a href="/ru/privacy.html">Приватность</a></li><li><a href="/ru/terms.html">Условия</a></li><li><a href="/ru/safety.html">Безопасность</a></li><li><a href="/ru/support.html">Поддержка</a></li><li><a href="/ru/changelog.html">История версий</a></li></ul>
+  <p class="f-copy">© 2026 VeloRadar. Независимое приложение для райдеров Bafang BBS02. Сделано в Чехии.</p>
+</footer>
+</body></html>

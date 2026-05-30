@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog - VeloRadar</title>
+  <meta name="description" content="Cronologia delle versioni e delle modifiche di VeloRadar.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="Changelog - VeloRadar">
+  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
+  <meta property="og:url" content="https://veloradar.app/it/changelog.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/changelog.html">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/changelog.html">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/changelog.html">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/changelog.html">
+  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/changelog.html">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/changelog.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/legal.css">
+  <style>
+    .release{margin-bottom:48px}
+    .release-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+    .release-ver{font-size:22px;font-weight:800;letter-spacing:-.3px}
+    .release-date{font-size:13px;color:var(--text3);font-weight:500}
+    .release-tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:980px;letter-spacing:.04em;text-transform:uppercase}
+    .release-tag.coming{background:rgba(48,209,88,.1);color:var(--green);border:1px solid rgba(48,209,88,.25)}
+    .release-tag.beta{background:rgba(255,159,10,.1);color:#ff9f0a;border:1px solid rgba(255,159,10,.25)}
+    .release-tag.released{background:rgba(255,255,255,.05);color:var(--text2);border:1px solid var(--border)}
+    .release h3{font-size:13px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin:18px 0 10px;padding-top:6px}
+    .release ul{list-style:none;padding-left:0}
+    .release li{position:relative;padding:5px 0 5px 20px;font-size:14.5px;color:var(--text2);line-height:1.55}
+    .release li::before{content:'';position:absolute;left:6px;top:13px;width:5px;height:5px;border-radius:50%;background:var(--green);opacity:.5}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/it/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
+  <div class="nav-right">
+    <a class="nav-back" href="/it/">← Home</a>
+    <div class="lang-switch" aria-label="Lingua">
+      <a href="/changelog.html" lang="en">EN</a>
+      <a href="/fr/changelog.html" lang="fr">FR</a>
+      <a href="/de/changelog.html" lang="de">DE</a>
+      <a href="/ru/changelog.html" lang="ru">RU</a>
+      <a href="/it/changelog.html" class="active" lang="it">IT</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <aside class="toc">
+    <div class="toc-label">Versioni</div>
+    <ul>
+      <li><a href="#v102">1.0.2 - In arrivo</a></li>
+      <li><a href="#v101">1.0.1 - Interna</a></li>
+      <li><a href="#v10">1.0 - Interna</a></li>
+    </ul>
+  </aside>
+  <div class="doc-content">
+    <div class="doc-header">
+      <div class="doc-badge">Changelog</div>
+      <h1>Cronologia delle versioni</h1>
+      <p class="doc-meta">Il registro di sviluppo completo è nel nostro repository git. Il riepilogo qui sotto copre le modifiche visibili agli utenti.</p>
+    </div>
+
+    <div class="release" id="v102">
+      <div class="release-head">
+        <span class="release-ver">1.0.2</span>
+        <span class="release-date">30 maggio 2026</span>
+        <span class="release-tag coming">Prima release pubblica</span>
+      </div>
+      <p style="color:var(--text2);font-size:14.5px;line-height:1.6;margin-bottom:14px">La prima versione pubblica di VeloRadar. Test sul campo finali in corso prima dell'invio all'App Store.</p>
+
+      <h3>Novità</h3>
+      <ul>
+        <li>Tensione, corrente e potenza in tempo reale lette direttamente dal controller EKD01-BF - identico al display nativo della bici, senza calibrazione</li>
+        <li>Percentuale batteria da curva di scarica reale 13S Li-ion (54,0 V = 100%, 42 V = 0%)</li>
+        <li>Autonomia rimanente adattiva calcolata sul tuo tempo di pedalata effettivo, sull'energia consumata e sulla potenza erogata</li>
+        <li>Integrazione del radar di retrovisione con tutti i modelli Garmin Varia - distanza, velocità e avvisi aptici quando un'auto entra nella zona di allerta</li>
+        <li>Direction View per la navigazione - vista 3D inclinata ravvicinata mentre pedali, un tap per vedere l'intero percorso in piano</li>
+        <li>Importazione percorsi GPX da Mapy.cz, Komoot, Strava, File o qualsiasi app di ciclismo</li>
+        <li>Sincronizzazione Apple Health (a tua scelta) - ogni pedalata salvata come allenamento in bici con il percorso GPS completo</li>
+        <li>Companion Apple Watch con batteria, autonomia e avvisi aptici per le auto in arrivo</li>
+        <li>Tracciamento opzionale a schermo bloccato - continua a registrare con il telefono in tasca</li>
+        <li>Tema chiaro, scuro e automatico - dashboard più leggibile in ogni condizione di luce</li>
+        <li>Navigazione inferiore visibile (Pedalata / Mappa / Statistiche) con pieno supporto all'accessibilità</li>
+        <li>Previsioni meteo a colori per le prossime 12 ore via Apple WeatherKit</li>
+        <li>Termini d'uso, Informativa sulla privacy e Avvertenze di sicurezza nell'app, mostrati una volta al primo avvio</li>
+        <li>Localizzata in inglese, francese, tedesco e russo</li>
+      </ul>
+
+      <h3>Affidabilità</h3>
+      <ul>
+        <li>Livello di affidabilità Bluetooth di livello produzione - timeout espliciti, protezioni dai callback stale, ripristino da disconnessioni durante la pedalata</li>
+        <li>Algoritmo di matching dei percorsi più veloce per tracciati GPX lunghi</li>
+        <li>Stato onesto "in attesa di dati" invece di un falso "connesso" prima dell'arrivo del primo pacchetto di telemetria</li>
+        <li>Deployment target iOS portato a iOS 17, in linea con quanto comunicato</li>
+      </ul>
+
+      <h3>Privacy</h3>
+      <ul>
+        <li>Notifiche, Apple Health e tracciamento a schermo bloccato ora richiedono il permesso iOS solo quando li attivi esplicitamente</li>
+        <li>Fallback OpenWeatherMap rimosso - Apple WeatherKit è ora l'unica sorgente meteo</li>
+        <li>Nessuna API di terze parti, di alcun tipo</li>
+      </ul>
+    </div>
+
+    <div class="release" id="v101">
+      <div class="release-head">
+        <span class="release-ver">1.0.1</span>
+        <span class="release-date">Interna · maggio 2026</span>
+        <span class="release-tag released">Tappa interna</span>
+      </div>
+      <ul>
+        <li>App companion per Apple Watch - batteria, autonomia, avvisi auto in arrivo</li>
+        <li>Live Activity / Dynamic Island per le pedalate in corso</li>
+        <li>Cinque sorgenti mappa (Apple Maps, Apple Satellite, OpenStreetMap, CyclOSM, OpenTopoMap)</li>
+        <li>Tour di onboarding riscritto con card di anteprima reali</li>
+      </ul>
+    </div>
+
+    <div class="release" id="v10">
+      <div class="release-head">
+        <span class="release-ver">1.0</span>
+        <span class="release-date">Interna · aprile 2026</span>
+        <span class="release-tag released">Tappa interna</span>
+      </div>
+      <ul>
+        <li>Prima build funzionante con telemetria EKD01-BF in tempo reale via protocollo ricostruito tramite reverse engineering</li>
+        <li>Dashboard con batteria, velocità, ODO, TRIP, PAS, corrente, tensione</li>
+        <li>Integrazione di base del radar Garmin Varia</li>
+        <li>Import GPX via foglio di condivisione iOS</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>
+  <ul class="f-links"><li><a href="/it/">Home</a></li><li><a href="/it/privacy.html">Privacy</a></li><li><a href="/it/terms.html">Termini</a></li><li><a href="/it/safety.html">Sicurezza</a></li><li><a href="/it/support.html">Supporto</a></li><li><a href="/it/roadmap.html">Roadmap</a></li></ul>
+  <p class="f-copy">© 2026 VeloRadar. App indipendente per i ciclisti Bafang BBS02. Sviluppata in Repubblica Ceca.</p>
+</footer>
+</body></html>

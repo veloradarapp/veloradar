@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История версий - VeloRadar</title>
+  <meta name="description" content="История релизов и изменений VeloRadar.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="История версий - VeloRadar">
+  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
+  <meta property="og:url" content="https://veloradar.app/ru/changelog.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/changelog.html">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/changelog.html">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/changelog.html">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/changelog.html">
+  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/changelog.html">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/changelog.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/legal.css">
+  <style>
+    .release{margin-bottom:48px}
+    .release-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+    .release-ver{font-size:22px;font-weight:800;letter-spacing:-.3px}
+    .release-date{font-size:13px;color:var(--text3);font-weight:500}
+    .release-tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:980px;letter-spacing:.04em;text-transform:uppercase}
+    .release-tag.coming{background:rgba(48,209,88,.1);color:var(--green);border:1px solid rgba(48,209,88,.25)}
+    .release-tag.beta{background:rgba(255,159,10,.1);color:#ff9f0a;border:1px solid rgba(255,159,10,.25)}
+    .release-tag.released{background:rgba(255,255,255,.05);color:var(--text2);border:1px solid var(--border)}
+    .release h3{font-size:13px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin:18px 0 10px;padding-top:6px}
+    .release ul{list-style:none;padding-left:0}
+    .release li{position:relative;padding:5px 0 5px 20px;font-size:14.5px;color:var(--text2);line-height:1.55}
+    .release li::before{content:'';position:absolute;left:6px;top:13px;width:5px;height:5px;border-radius:50%;background:var(--green);opacity:.5}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/ru/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
+  <div class="nav-right">
+    <a class="nav-back" href="/ru/">← Главная</a>
+    <div class="lang-switch" aria-label="Язык">
+      <a href="/changelog.html" lang="en">EN</a>
+      <a href="/fr/changelog.html" lang="fr">FR</a>
+      <a href="/de/changelog.html" lang="de">DE</a>
+      <a href="/ru/changelog.html" class="active" lang="ru">RU</a>
+      <a href="/it/changelog.html" lang="it">IT</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <aside class="toc">
+    <div class="toc-label">Версии</div>
+    <ul>
+      <li><a href="#v102">1.0.2 - Скоро</a></li>
+      <li><a href="#v101">1.0.1 - Внутренняя</a></li>
+      <li><a href="#v10">1.0 - Внутренняя</a></li>
+    </ul>
+  </aside>
+  <div class="doc-content">
+    <div class="doc-header">
+      <div class="doc-badge">История версий</div>
+      <h1>История релизов</h1>
+      <p class="doc-meta">Полный лог разработки живёт в нашем git-репозитории. Ниже - сводка изменений, видимых пользователю.</p>
+    </div>
+
+    <div class="release" id="v102">
+      <div class="release-head">
+        <span class="release-ver">1.0.2</span>
+        <span class="release-date">30 мая 2026</span>
+        <span class="release-tag coming">Первый публичный релиз</span>
+      </div>
+      <p style="color:var(--text2);font-size:14.5px;line-height:1.6;margin-bottom:14px">Первая публичная версия VeloRadar. Сейчас идут финальные полевые тесты перед отправкой в App Store.</p>
+
+      <h3>Что нового</h3>
+      <ul>
+        <li>Живое напряжение, ток и мощность напрямую с контроллера EKD01-BF - идентично родному дисплею велосипеда, без калибровки</li>
+        <li>Процент заряда по реальной разрядной кривой 13S Li-ion (54,0 В = 100%, 42 В = 0%)</li>
+        <li>Адаптивный запас хода, рассчитанный по вашему реальному времени езды, расходу энергии и мощности</li>
+        <li>Интеграция с радаром заднего обзора для всех моделей Garmin Varia - дистанция, скорость и тактильные сигналы, когда машина входит в зону предупреждения</li>
+        <li>Камера Direction View для навигации - наклонная 3D-перспектива во время езды, один тап показывает весь маршрут плоско</li>
+        <li>Импорт GPX-маршрутов из Mapy.cz, Komoot, Strava, «Файлов» или любого велосипедного приложения</li>
+        <li>Синхронизация с Apple Health (по выбору) - каждая поездка сохраняется как велотренировка с полным GPS-маршрутом</li>
+        <li>Компаньон для Apple Watch с зарядом, запасом хода и тактильными предупреждениями о машинах сзади</li>
+        <li>Опциональная запись поездки при заблокированном экране - запись продолжается, пока телефон в кармане</li>
+        <li>Светлая, тёмная и системная темы - читаемый дашборд в любых условиях освещения</li>
+        <li>Видимая нижняя навигация (Поездка / Карта / Статистика) с полной поддержкой доступности</li>
+        <li>Цветной прогноз погоды на следующие 12 часов через Apple WeatherKit</li>
+        <li>Условия использования, Политика конфиденциальности и Дисклеймер безопасности в приложении - показываются один раз при первом запуске</li>
+        <li>Локализация на английском, французском, немецком и русском</li>
+      </ul>
+
+      <h3>Надёжность</h3>
+      <ul>
+        <li>Промышленный уровень надёжности Bluetooth - явные таймауты, защита от устаревших колбэков, восстановление после разрывов посреди поездки</li>
+        <li>Более быстрый алгоритм сопоставления маршрутов для длинных импортированных GPX-треков</li>
+        <li>Честное состояние «ожидание данных» вместо ложного «подключено» до прихода первого пакета телеметрии</li>
+        <li>Минимальная версия iOS поднята до 17 - в соответствии с маркетинговым обещанием</li>
+      </ul>
+
+      <h3>Приватность</h3>
+      <ul>
+        <li>Уведомления, Apple Health и трекинг при заблокированном экране теперь запрашивают системное разрешение iOS только когда вы явно их включаете</li>
+        <li>Резервный источник OpenWeatherMap убран - Apple WeatherKit стал единственным источником погоды</li>
+        <li>Никаких сторонних API любого рода</li>
+      </ul>
+    </div>
+
+    <div class="release" id="v101">
+      <div class="release-head">
+        <span class="release-ver">1.0.1</span>
+        <span class="release-date">Внутренняя · май 2026</span>
+        <span class="release-tag released">Внутренняя веха</span>
+      </div>
+      <ul>
+        <li>Приложение-компаньон для Apple Watch - заряд, запас хода, предупреждения о машинах сзади</li>
+        <li>Live Activity / Dynamic Island для текущих поездок</li>
+        <li>Пять вариантов источника карты (Apple Maps, Apple Satellite, OpenStreetMap, CyclOSM, OpenTopoMap)</li>
+        <li>Онбординг переписан с настоящими карточками предпросмотра</li>
+      </ul>
+    </div>
+
+    <div class="release" id="v10">
+      <div class="release-head">
+        <span class="release-ver">1.0</span>
+        <span class="release-date">Внутренняя · апрель 2026</span>
+        <span class="release-tag released">Внутренняя веха</span>
+      </div>
+      <ul>
+        <li>Первая рабочая сборка с живой телеметрией EKD01-BF через реверс-инжиниринг протокола</li>
+        <li>Дашборд с зарядом, скоростью, ODO, TRIP, PAS, током, напряжением</li>
+        <li>Базовая интеграция с радаром Garmin Varia</li>
+        <li>Импорт GPX через системное окно «Поделиться» iOS</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>
+  <ul class="f-links"><li><a href="/ru/">Главная</a></li><li><a href="/ru/privacy.html">Приватность</a></li><li><a href="/ru/terms.html">Условия</a></li><li><a href="/ru/safety.html">Безопасность</a></li><li><a href="/ru/support.html">Поддержка</a></li><li><a href="/ru/roadmap.html">Планы</a></li></ul>
+  <p class="f-copy">© 2026 VeloRadar. Независимое приложение для райдеров Bafang BBS02. Сделано в Чехии.</p>
+</footer>
+</body></html>
