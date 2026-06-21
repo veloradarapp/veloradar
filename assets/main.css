@@ -54,6 +54,7 @@ nav.scrolled{background:rgba(10,10,15,.96);border-bottom-color:rgba(255,255,255,
 .lang-divider~li a:hover{color:var(--text);background:rgba(255,255,255,.04)}
 
 /* ── FOOTER ── */
+footer nav{position:static;height:auto;padding:0;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border:none;display:block}
 footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 40px}
 .footer-inner{max-width:1140px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
 .f-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
