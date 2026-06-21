@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feuille de route - VeloRadar</title>
+  <meta name="description" content="Ce qui arrive ensuite dans VeloRadar.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="Feuille de route - VeloRadar">
+  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
+  <meta property="og:url" content="https://veloradar.app/fr/roadmap/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://veloradar.app/fr/roadmap/">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/roadmap/">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/roadmap/">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/roadmap/">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/roadmap/">
+  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/roadmap/">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/roadmap/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css">
+  <style>
+    .road-stage{background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:28px 30px;margin-bottom:20px;position:relative}
+    .road-stage h3{font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:6px}
+    .road-stage .when{font-size:12px;font-weight:700;color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+    .road-stage .when.later{color:var(--text3)}
+    .road-stage p{font-size:14.5px;color:var(--text2);line-height:1.6;margin-bottom:14px}
+    .road-stage ul{list-style:none;padding-left:0}
+    .road-stage li{position:relative;padding:5px 0 5px 22px;font-size:14px;color:var(--text2);line-height:1.55}
+    .road-stage li::before{content:'';position:absolute;left:6px;top:13px;width:6px;height:6px;border-radius:50%;background:var(--green);opacity:.5}
+    .road-stage.future{opacity:.75}
+    .disclaimer{font-size:13px;color:var(--text3);line-height:1.6;padding:16px 20px;background:rgba(255,159,10,.04);border:1px solid rgba(255,159,10,.15);border-radius:12px;margin-bottom:32px}
+  </style>
+</head>
+<body>
+<div id="vr-nav"></div>
+<main id="main-content">
+  <aside class="toc">
+    <div class="toc-label">Étapes</div>
+    <ul>
+      <li><a href="#now">Actuellement - v1.0.2</a></li>
+      <li><a href="#next">Ensuite - v1.1</a></li>
+      <li><a href="#later">Plus tard - v1.2+</a></li>
+      <li><a href="#someday">Un jour</a></li>
+    </ul>
+  </aside>
+  <div class="doc-content">
+    <div class="doc-header">
+      <div class="doc-badge">Feuille de route</div>
+      <h1>Et après ?</h1>
+      <p class="doc-meta">Mise à jour régulièrement. Pas de dates fixes - la qualité avant les échéances.</p>
+    </div>
+
+    <div class="disclaimer">
+      ⚠️ Les feuilles de route sont des intentions, pas des promesses. L'ordre peut changer en fonction des retours de terrain et les demandes des cyclistes. Nous mettrons cette page à jour quand les priorités évolueront.
+    </div>
+
+    <div class="road-stage" id="now">
+      <div class="when">En cours de livraison</div>
+      <h3>v1.0.2 - Première version publique</h3>
+      <p>Tout ce qui est décrit sur la page d'accueil. En phase finale de tests sur le terrain avant soumission à l'App Store. <a href="/fr/changelog/#v102" style="color:var(--green);text-decoration:none;font-weight:600">Voir l'historique complet →</a></p>
+    </div>
+
+    <div class="road-stage" id="next">
+      <div class="when">Ensuite</div>
+      <h3>v1.1 - Apprentissage batterie par IA</h3>
+      <p>Pourcentage de batterie et estimation d'autonomie personnalisés grâce à de l'apprentissage automatique sur l'appareil. Au bout d'environ 10-20 sorties, VeloRadar commencera à adapter la courbe de décharge au comportement spécifique de votre batterie - en tenant compte du vieillissement des cellules, de la température et de votre style de conduite.</p>
+      <ul>
+        <li>Modèle Core ML entraîné localement, sur votre appareil - aucune donnée ne quitte votre téléphone</li>
+        <li>S'améliore en continu plus vous roulez</li>
+        <li>Estimation d'autonomie affinée intégrant dénivelé, température et vent</li>
+        <li>Mode « afficher l'intervalle de confiance » en option pour plus de transparence</li>
+      </ul>
+    </div>
+
+    <div class="road-stage" id="later">
+      <div class="when">Plus tard</div>
+      <h3>v1.2 - Vue simplifiée et coaching de sortie</h3>
+      <p>Une quatrième page dans l'app : une Vue simplifiée épurée avec seulement quatre chiffres géants (vitesse, batterie %, puissance, autonomie). Conçue pour être lisible à un mètre - et pour servir de capture héros honnête sur ce site.</p>
+      <ul>
+        <li>Vue simplifiée - tableau de bord minimal lisible d'un seul coup d'œil</li>
+        <li>Coaching de sortie : « vous êtes à 5 km de votre point de demi-tour habituel, batterie à 42 % »</li>
+        <li>Détection de chute via l'accéléromètre + SOS automatique vers les services d'urgence Apple</li>
+        <li>Synchronisation iCloud pour l'archive des trajets (sur option)</li>
+      </ul>
+    </div>
+
+    <div class="road-stage future" id="someday">
+      <div class="when later">Un jour</div>
+      <h3>Au-delà</h3>
+      <p>Des idées plus ambitieuses qui nous tiennent à cœur mais ne sont pas prioritaires aujourd'hui :</p>
+      <ul>
+        <li>Application watchOS indépendante - suivre une sortie depuis la Watch seule, sans iPhone</li>
+        <li>Envoi direct vers Strava après les sorties (actuellement vous pouvez partager le GPX manuellement)</li>
+        <li>Recalcul d'itinéraire en cas de déroutement via l'API Mapy.cz</li>
+        <li>Prise en charge d'autres écrans Bafang - APT 580C/600C/750C/860C et DPC181 - si un propriétaire de Bafang équipé d'un de ces écrans nous fournit une capture Bluetooth depuis l'application officielle</li>
+        <li>Navigation vocale mains libres pour les indications de virage</li>
+      </ul>
+    </div>
+
+    <p style="font-size:14px;color:var(--text3);line-height:1.6;margin-top:32px">Une demande de fonctionnalité ? <a href="mailto:support@veloradar.app?subject=Feature%20request" style="color:var(--green);text-decoration:none;font-weight:600">Écrivez-nous</a>. Nous lisons tout.</p>
+  </div>
+</main>
+<div id="vr-footer"></div>
+<script src="/assets/site.js"></script>
+</body></html>

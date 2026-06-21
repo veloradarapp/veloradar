@@ -1,0 +1,13 @@
+{
+  "name": "VeloRadar",
+  "short_name": "VeloRadar",
+  "description": "E-bike dashboard for Bafang BBS02 with EKD01-BF display",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    { "src": "/assets/icon.png", "sizes": "any", "type": "image/png" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

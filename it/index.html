@@ -24,6 +24,8 @@
   <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://veloradar.app/it/">
 
   <!-- hreflang -->
   <link rel="alternate" hreflang="en" href="https://veloradar.app/">
@@ -64,54 +66,13 @@
   }
   </script>
 
-  <link rel="stylesheet" href="/assets/landing.css">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
 <body>
-
-<nav>
-  <a class="nav-logo" href="/it/" aria-label="VeloRadar home">
-    <img src="/assets/icon.png" alt="">
-    <span>VeloRadar</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#features">Funzioni</a></li>
-    <li><a href="#compare">Confronto</a></li>
-    <li><a href="#compatibility">Hardware</a></li>
-    <li><a href="#privacy">Privacy</a></li>
-    <li><a href="/it/support.html">Supporto</a></li>
-  </ul>
-  <a class="nav-cta" href="#download">Scarica l'app</a>
-  <div class="lang-switch" aria-label="Lingua">
-    <a href="/" lang="en">EN</a>
-    <a href="/fr/" lang="fr">FR</a>
-    <a href="/de/" lang="de">DE</a>
-    <a href="/ru/" lang="ru">RU</a>
-    <a href="/it/" class="active" lang="it">IT</a>
-  </div>
-  <button class="nav-burger" aria-label="Apri menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  </button>
-</nav>
-
-<div class="mobile-menu">
-  <ul>
-    <li><a href="#features" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Funzioni</a></li>
-    <li><a href="#compare" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Confronto</a></li>
-    <li><a href="#compatibility" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Hardware</a></li>
-    <li><a href="#privacy" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Privacy</a></li>
-    <li><a href="/it/support.html">Supporto</a></li>
-    <li><a href="#download" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Scarica l'app</a></li>
-    <li style="padding-top:12px;border-top:1px solid var(--border);margin-top:8px;font-size:13px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase">Lingua</li>
-    <li><a href="/" lang="en">English</a></li>
-    <li><a href="/fr/" lang="fr">Français</a></li>
-    <li><a href="/de/" lang="de">Deutsch</a></li>
-    <li><a href="/ru/" lang="ru">Русский</a></li>
-    <li><a href="/it/" lang="it">Italiano</a></li>
-  </ul>
-</div>
+<div id="vr-nav"></div>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="main-content">
   <div class="hero-badge"><span class="dot"></span> Presto sull'App Store</div>
   <h1>Guarda la tua e-bike.<br>Vedi chi <span class="accent">ti viene dietro.</span></h1>
   <p>Il cruscotto per ciclisti pensato per Bafang BBS02 con display EKD01-BF. Telemetria in tempo reale, navigazione GPX, radar di retrovisione Garmin Varia - tutto sull'iPhone che già porti con te.</p>
@@ -364,7 +325,7 @@
       <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Gratis · Niente acquisti in-app</div>
     </div>
     <p style="margin-top:32px;font-size:15px;color:var(--text2)">
-      <a href="/it/privacy.html" style="color:var(--green);text-decoration:none;font-weight:600">Leggi l'informativa sulla privacy completa →</a>
+      <a href="/it/privacy/" style="color:var(--green);text-decoration:none;font-weight:600">Leggi l'informativa sulla privacy completa →</a>
     </p>
   </div>
 </section>
@@ -391,25 +352,13 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <a class="f-logo" href="/it/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
-  <ul class="f-links">
-    <li><a href="/it/privacy.html">Privacy</a></li>
-    <li><a href="/it/terms.html">Termini</a></li>
-    <li><a href="/it/safety.html">Sicurezza</a></li>
-    <li><a href="/it/support.html">Supporto</a></li>
-    <li><a href="/it/changelog.html">Changelog</a></li>
-    <li><a href="/it/roadmap.html">Roadmap</a></li>
-    <li><a href="mailto:support@veloradar.app">Contatti</a></li>
-  </ul>
-  <p class="f-copy">© 2026 VeloRadar. App indipendente per chi guida e-bike con Bafang BBS02. Realizzata in Repubblica Ceca. Non affiliata a Bafang, Huiye, Varstrom, Garmin o Apple.</p>
-</footer>
+<div id="vr-footer"></div>
 
 <!-- STICKY MOBILE CTA -->
 <div class="sticky-cta">
   <a href="#download">📬 <strong>Avvisami al lancio</strong></a>
 </div>
 
+<script src="/assets/site.js"></script>
 </body>
 </html>

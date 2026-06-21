@@ -1,92 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Поддержка - VeloRadar</title>
-  <meta name="description" content="Свяжитесь с нами и найдите ответы на частые вопросы о VeloRadar.">
-  <meta name="theme-color" content="#0a0a0f">
-  <meta property="og:title" content="Поддержка - VeloRadar">
-  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
-  <meta property="og:url" content="https://veloradar.app/ru/support.html">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="en" href="https://veloradar.app/support.html">
-  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/support.html">
-  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/support.html">
-  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/support.html">
-  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/support.html">
-  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/support.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/legal.css">
-  <style>
-    .faq-q{font-size:15.5px;font-weight:700;margin-bottom:5px;letter-spacing:-.1px}
-    .faq-a{font-size:14px;color:var(--text2);line-height:1.6}
-    .contact-hero{text-align:center;margin-bottom:48px}
-    .email-btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#000;font-size:16px;font-weight:600;padding:14px 28px;border-radius:980px;text-decoration:none;margin-top:20px;transition:opacity .2s}
-    .email-btn:hover{opacity:.85}
-  </style>
-</head>
-<body>
-<nav>
-  <a class="nav-logo" href="/ru/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
-  <div class="nav-right">
-    <a class="nav-back" href="/ru/">← Главная</a>
-    <div class="lang-switch" aria-label="Язык">
-      <a href="/support.html" lang="en">EN</a>
-      <a href="/fr/support.html" lang="fr">FR</a>
-      <a href="/de/support.html" lang="de">DE</a>
-      <a href="/ru/support.html" class="active" lang="ru">RU</a>
-      <a href="/it/support.html" lang="it">IT</a>
-    </div>
-  </div>
-</nav>
-<main>
-  <aside class="toc">
-    <div class="toc-label">FAQ</div>
-    <ul>
-      <li><a href="#contact-hero">Связаться с нами</a></li>
-      <li><a href="#faq">Частые вопросы</a></li>
-      <li><a href="#still">Нужна ещё помощь?</a></li>
-    </ul>
-  </aside>
-  <div class="doc-content">
-    <div class="doc-header">
-      <div class="doc-badge">Поддержка</div>
-      <h1>Чем можем помочь?</h1>
-    </div>
-
-    <div class="contact-hero" id="contact-hero">
-      <p style="font-size:17px;color:var(--text2);max-width:480px;margin:0 auto;line-height:1.6">Напишите нам напрямую - мы читаем каждое сообщение и обычно отвечаем в течение 24 часов.</p>
-      <a class="email-btn" href="mailto:support@veloradar.app">✉ support@veloradar.app</a>
-      <p style="margin-top:14px;font-size:13px;color:var(--text3)">Укажите модель iPhone, версию iOS и краткое описание проблемы.</p>
-    </div>
-
-    <section id="faq">
-      <h2>Частые вопросы</h2>
-      <div class="card">
-        <div class="card-item"><span class="ci">🔌</span><div><p class="faq-q">Велосипед не подключается</p><p class="faq-a">Убедитесь, что дисплей EKD01-BF включён и находится рядом, а Bluetooth на iPhone включён (Настройки &rarr; Bluetooth). Текущий статус показан в верхней панели.<br><br><strong>Важно:</strong> EKD01-BF может работать только с одним приложением одновременно. Если BikeGo (или любое другое приложение-компаньон) всё ещё подключено к вашему дисплею, VeloRadar не сможет соединиться. Полностью закройте BikeGo и выключите для него доступ к Bluetooth в Настройках iOS &rarr; BikeGo &rarr; Bluetooth (выключите). Затем откройте VeloRadar и нажмите «Повторить».<br><br>Если статус по-прежнему «Подключение...», принудительно закройте и снова откройте VeloRadar.</p></div></div>
-        <div class="card-item"><span class="ci">🚗</span><div><p class="faq-q">Garmin Varia не подключается</p><p class="faq-a">Убедитесь, что Varia включена (одно нажатие кнопки питания). Если устройство не использовалось 10+ минут, оно могло уйти в спящий режим и выключиться - нажмите кнопку ещё раз, чтобы разбудить. Иконка радара в верхней панели показывает статус подключения.</p></div></div>
-        <div class="card-item"><span class="ci">🗺️</span><div><p class="faq-q">Маршрут не импортируется из Mapy.cz / Komoot / Strava</p><p class="faq-a">В Mapy.cz откройте маршрут → Поделиться → VeloRadar. В Komoot или Strava экспортируйте маршрут как GPX и откройте файл в VeloRadar через «Файлы» или почту. Файл должен быть корректного формата .gpx.</p></div></div>
-        <div class="card-item"><span class="ci">🌤️</span><div><p class="faq-q">Не показывается погода</p><p class="faq-a">VeloRadar использует Apple WeatherKit, которому нужен валидный GPS-фикс. Подождите несколько минут после запуска, пока определится местоположение. Убедитесь, что разрешение на геолокацию выдано (Настройки → Конфиденциальность → Геолокация → VeloRadar → При использовании).</p></div></div>
-        <div class="card-item"><span class="ci">❤️</span><div><p class="faq-q">Тренировка не появляется в Apple Health</p><p class="faq-a">После завершения поездки нажмите «Сбросить TRIP» на экране статистики. В этот момент тренировка отправляется в Health. Убедитесь, что синхронизация включена (Настройки → Поездка → Синхронизировать поездки с Apple Health) и что доступ к Health разрешён в iOS.</p></div></div>
-        <div class="card-item"><span class="ci">🔋</span><div><p class="faq-q">Процент заряда выглядит неправильно</p><p class="faq-a">Убедитесь, что выбран правильный тип батареи в Настройки → Поездка → Тип батареи. Для большинства сборок Bafang BBS02 с пакетом 48 В нужно выбрать «48V Li-ion (13S)» (54,0 В = 100%, 42 В = 0%).</p></div></div>
-        <div class="card-item"><span class="ci">📍</span><div><p class="faq-q">Запись поездки останавливается при блокировке экрана</p><p class="faq-a">Включите Настройки → Поездка → Записывать при заблокированном экране. iOS запросит разрешение «Всегда» на геолокацию - это позволит держать GPS, статистику поездки и запись маршрута активными при выключенном экране.</p></div></div>
-        <div class="card-item"><span class="ci">📱</span><div><p class="faq-q">Какие iPhone поддерживаются?</p><p class="faq-a">iPhone 12 или новее на iOS 17 или выше. Приложение рассчитано на крепление на руль, поэтому подойдёт любой современный iPhone с подходящим держателем.</p></div></div>
-      </div>
-    </section>
-
-    <section id="still">
-      <h2>Нужна ещё помощь?</h2>
-      <p class="contact-note">Напишите на <a href="mailto:support@veloradar.app">support@veloradar.app</a>, указав модель iPhone, версию iOS и описание проблемы. Скриншоты и краткое описание шагов воспроизведения сильно помогут.</p>
-    </section>
-  </div>
-</main>
-<footer>
-  <ul class="f-links"><li><a href="/ru/">Главная</a></li><li><a href="/ru/privacy.html">Приватность</a></li><li><a href="/ru/terms.html">Условия</a></li><li><a href="/ru/safety.html">Безопасность</a></li><li><a href="/ru/changelog.html">История версий</a></li></ul>
-  <p class="f-copy">© 2026 VeloRadar. Независимое приложение для владельцев Bafang BBS02. Сделано в Чехии.</p>
-</footer>
+<html lang="ru"><head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=/ru/support/">
+<link rel="canonical" href="https://veloradar.app/ru/support/">
+<title>Redirecting... - VeloRadar</title>
+</head><body>
+<p><a href="/ru/support/">Click here if not redirected</a></p>
 </body></html>

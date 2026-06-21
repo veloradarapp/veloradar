@@ -19,6 +19,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://veloradar.app/ru/">
 
   <link rel="alternate" hreflang="en" href="https://veloradar.app/">
   <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/">
@@ -46,53 +48,12 @@
   }
   </script>
 
-  <link rel="stylesheet" href="/assets/landing.css">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
 <body>
+<div id="vr-nav"></div>
 
-<nav>
-  <a class="nav-logo" href="/ru/" aria-label="VeloRadar главная">
-    <img src="/assets/icon.png" alt="">
-    <span>VeloRadar</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#features">Возможности</a></li>
-    <li><a href="#compare">Сравнение</a></li>
-    <li><a href="#compatibility">Совместимость</a></li>
-    <li><a href="#privacy">Приватность</a></li>
-    <li><a href="/ru/support.html">Поддержка</a></li>
-  </ul>
-  <a class="nav-cta" href="#download">Скачать</a>
-  <div class="lang-switch" aria-label="Язык">
-    <a href="/" lang="en">EN</a>
-    <a href="/fr/" lang="fr">FR</a>
-    <a href="/de/" lang="de">DE</a>
-    <a href="/ru/" class="active" lang="ru">RU</a>
-    <a href="/it/" lang="it">IT</a>
-  </div>
-  <button class="nav-burger" aria-label="Открыть меню" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  </button>
-</nav>
-
-<div class="mobile-menu">
-  <ul>
-    <li><a href="#features" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Возможности</a></li>
-    <li><a href="#compare" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Сравнение</a></li>
-    <li><a href="#compatibility" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Совместимость</a></li>
-    <li><a href="#privacy" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Приватность</a></li>
-    <li><a href="/ru/support.html">Поддержка</a></li>
-    <li><a href="#download" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Скачать</a></li>
-    <li style="padding-top:12px;border-top:1px solid var(--border);margin-top:8px;font-size:13px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase">Язык</li>
-    <li><a href="/" lang="en">English</a></li>
-    <li><a href="/fr/" lang="fr">Français</a></li>
-    <li><a href="/de/" lang="de">Deutsch</a></li>
-    <li><a href="/ru/" lang="ru">Русский</a></li>
-    <li><a href="/it/" lang="it">Italiano</a></li>
-  </ul>
-</div>
-
-<section class="hero">
+<section class="hero" id="main-content">
   <div class="hero-badge"><span class="dot"></span> Скоро в App Store</div>
   <h1>Знай свой электровелосипед.<br>Знай, что <span class="accent">позади.</span></h1>
   <p>Велосипедный дашборд для Bafang BBS02 с дисплеем EKD01-BF. Живая телеметрия, GPX-навигация, радар заднего обзора Garmin Varia - всё на iPhone, который и так с вами.</p>
@@ -284,7 +245,7 @@
       <div class="pp"><svg viewBox="0 0 14 14"><path d="M3 7l3 3 6-6"/></svg> Бесплатно · Без покупок</div>
     </div>
     <p style="margin-top:32px;font-size:15px;color:var(--text2)">
-      <a href="/ru/privacy.html" style="color:var(--green);text-decoration:none;font-weight:600">Прочитать полную Политику конфиденциальности →</a>
+      <a href="/ru/privacy/" style="color:var(--green);text-decoration:none;font-weight:600">Прочитать полную Политику конфиденциальности →</a>
     </p>
   </div>
 </section>
@@ -310,23 +271,12 @@
   </div>
 </section>
 
-<footer>
-  <a class="f-logo" href="/ru/"><img src="/assets/icon.png" alt=""><span>VeloRadar</span></a>
-  <ul class="f-links">
-    <li><a href="/ru/privacy.html">Приватность</a></li>
-    <li><a href="/ru/terms.html">Условия</a></li>
-    <li><a href="/ru/safety.html">Безопасность</a></li>
-    <li><a href="/ru/support.html">Поддержка</a></li>
-    <li><a href="/ru/changelog.html">История версий</a></li>
-    <li><a href="/ru/roadmap.html">Планы</a></li>
-    <li><a href="mailto:support@veloradar.app">Контакт</a></li>
-  </ul>
-  <p class="f-copy">© 2026 VeloRadar. Независимое приложение для владельцев Bafang BBS02. Сделано в Чехии. Не связано с Bafang, Huiye, Varstrom, Garmin или Apple.</p>
-</footer>
+<div id="vr-footer"></div>
 
 <div class="sticky-cta">
   <a href="#download">📬 <strong>Сообщить мне о запуске</strong></a>
 </div>
 
+<script src="/assets/site.js"></script>
 </body>
 </html>

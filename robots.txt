@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Disallow git internals (shouldn't be served, but just in case)
+Disallow: /.git/
+
 Sitemap: https://veloradar.app/sitemap.xml

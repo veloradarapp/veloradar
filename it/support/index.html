@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supporto - VeloRadar</title>
+  <meta name="description" content="Contattaci e trova risposte alle domande più comuni su VeloRadar.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="Supporto - VeloRadar">
+  <meta property="og:image" content="https://veloradar.app/assets/og-image.png">
+  <meta property="og:url" content="https://veloradar.app/it/support/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://veloradar.app/it/support/">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://veloradar.app/support/">
+  <link rel="alternate" hreflang="ru" href="https://veloradar.app/ru/support/">
+  <link rel="alternate" hreflang="de" href="https://veloradar.app/de/support/">
+  <link rel="alternate" hreflang="fr" href="https://veloradar.app/fr/support/">
+  <link rel="alternate" hreflang="it" href="https://veloradar.app/it/support/">
+  <link rel="alternate" hreflang="x-default" href="https://veloradar.app/support/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css">
+  <style>
+    .faq-q{font-size:15.5px;font-weight:700;margin-bottom:5px;letter-spacing:-.1px}
+    .faq-a{font-size:14px;color:var(--text2);line-height:1.6}
+    .contact-hero{text-align:center;margin-bottom:48px}
+    .email-btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#000;font-size:16px;font-weight:600;padding:14px 28px;border-radius:980px;text-decoration:none;margin-top:20px;transition:opacity .2s}
+    .email-btn:hover{opacity:.85}
+  </style>
+</head>
+<body>
+<div id="vr-nav"></div>
+<main id="main-content">
+  <aside class="toc">
+    <div class="toc-label">FAQ</div>
+    <ul>
+      <li><a href="#contact-hero">Contattaci</a></li>
+      <li><a href="#faq">Domande comuni</a></li>
+      <li><a href="#still">Ti serve ancora aiuto?</a></li>
+    </ul>
+  </aside>
+  <div class="doc-content">
+    <div class="doc-header">
+      <div class="doc-badge">Supporto</div>
+      <h1>Come possiamo aiutarti?</h1>
+    </div>
+
+    <div class="contact-hero" id="contact-hero">
+      <p style="font-size:17px;color:var(--text2);max-width:480px;margin:0 auto;line-height:1.6">Scrivici direttamente - leggiamo ogni messaggio e di solito rispondiamo entro 24 ore.</p>
+      <a class="email-btn" href="mailto:support@veloradar.app">✉ support@veloradar.app</a>
+      <p style="margin-top:14px;font-size:13px;color:var(--text3)">Indica modello di iPhone, versione di iOS e una breve descrizione del problema.</p>
+    </div>
+
+    <section id="faq">
+      <h2>Domande frequenti</h2>
+      <div class="card">
+        <div class="card-item"><span class="ci">🔌</span><div><p class="faq-q">La bici non si connette</p><p class="faq-a">Assicurati che il display EKD01-BF sia acceso e vicino e che il Bluetooth dell'iPhone sia attivo (Impostazioni &rarr; Bluetooth). La barra superiore mostra lo stato attuale.<br><br><strong>Importante:</strong> l'EKD01-BF può comunicare con una sola app alla volta. Se BikeGo (o qualsiasi altra app collegata) è ancora connessa al display, VeloRadar non riuscirà a collegarsi. Chiudi completamente BikeGo e revoca il suo accesso Bluetooth da Impostazioni iOS &rarr; BikeGo &rarr; Bluetooth (disattivalo). Poi apri VeloRadar e tocca Riprova.<br><br>Se resta bloccata su "Connessione in corso...", forza la chiusura e riapri VeloRadar.</p></div></div>
+        <div class="card-item"><span class="ci">🚗</span><div><p class="faq-q">Il Garmin Varia non si connette</p><p class="faq-a">Assicurati che il Varia sia acceso (una pressione sul tasto). Se non è stato usato per più di 10 minuti potrebbe essere entrato in standby e spento - premi di nuovo il tasto per riattivarlo. L'icona del radar nella barra superiore mostra lo stato della connessione.</p></div></div>
+        <div class="card-item"><span class="ci">🗺️</span><div><p class="faq-q">Il percorso non si importa da Mapy.cz / Komoot / Strava</p><p class="faq-a">Da Mapy.cz, apri il percorso → Condividi → VeloRadar. Da Komoot o Strava, esporta il percorso come GPX e poi apri il file con VeloRadar tramite File o la tua email. Il file deve essere un .gpx valido.</p></div></div>
+        <div class="card-item"><span class="ci">🌤️</span><div><p class="faq-q">Il meteo non si vede</p><p class="faq-a">VeloRadar usa Apple WeatherKit, che richiede un fix GPS valido. Aspetta qualche minuto dopo l'avvio per agganciare il GPS. Verifica che il permesso di posizione sia concesso (Impostazioni → Privacy → Localizzazione → VeloRadar → Mentre l'app è in uso).</p></div></div>
+        <div class="card-item"><span class="ci">❤️</span><div><p class="faq-q">L'allenamento non appare in Apple Health</p><p class="faq-a">Dopo una pedalata, tocca Reset TRIP nella schermata Statistiche. In quel momento l'allenamento viene inviato a Salute. Verifica che la sincronizzazione sia attiva (Impostazioni → Pedalata → Sincronizza le pedalate con Apple Health) e che il permesso Salute di iOS sia concesso.</p></div></div>
+        <div class="card-item"><span class="ci">🔋</span><div><p class="faq-q">La % batteria sembra strana</p><p class="faq-a">Verifica di aver selezionato il tipo di batteria corretto in Impostazioni → Pedalata → Tipo di batteria. Per la maggior parte delle configurazioni Bafang BBS02 con pacco 48V dovrebbe essere "48V Li-ion (13S)" (54,0 V = 100%, 42 V = 0%).</p></div></div>
+        <div class="card-item"><span class="ci">📍</span><div><p class="faq-q">Il tracciamento si ferma quando blocco lo schermo</p><p class="faq-a">Attiva Impostazioni → Pedalata → Traccia a schermo bloccato. iOS chiederà l'autorizzazione alla localizzazione "Sempre" - mantiene attivi GPS, statistiche di percorso e registrazione anche con lo schermo spento.</p></div></div>
+        <div class="card-item"><span class="ci">📱</span><div><p class="faq-q">Quali iPhone sono supportati?</p><p class="faq-a">iPhone 12 o successivo, con iOS 17 o più recente. L'app è pensata per l'uso a manubrio, quindi va bene qualsiasi iPhone moderno con un supporto.</p></div></div>
+      </div>
+    </section>
+
+    <section id="still">
+      <h2>Ti serve ancora aiuto?</h2>
+      <p class="contact-note">Scrivici a <a href="mailto:support@veloradar.app">support@veloradar.app</a> indicando modello di iPhone, versione di iOS e il problema che riscontri. Screenshot e una breve descrizione dei passaggi per riprodurlo aiutano moltissimo.</p>
+    </section>
+  </div>
+</main>
+<div id="vr-footer"></div>
+<script src="/assets/site.js"></script>
+</body></html>
