@@ -92,6 +92,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 40px
 .phone-shot--offset{margin-top:30px}
 .phone-shot--offset2{margin-top:60px}
 .shots-note{font-size:12px;color:var(--text3);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+@media(hover:hover){.phone-shot{cursor:zoom-in}}
+.lightbox{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.88);align-items:center;justify-content:center;cursor:zoom-out;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.lightbox.open{display:flex}
+.lightbox img{max-height:90vh;max-width:min(480px,90vw);width:auto;height:auto;border-radius:20px;box-shadow:0 40px 120px rgba(0,0,0,.8)}
 
 /* ── SECTIONS ── */
 .section-label{font-size:12px;font-weight:700;color:var(--green);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}

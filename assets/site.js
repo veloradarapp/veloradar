@@ -224,4 +224,40 @@
     });
   }
 
+
+  // ── Screenshot lightbox (desktop only) ───────────────────────────────────
+  var shots = document.querySelectorAll('.phone-shot');
+  if (shots.length && window.matchMedia('(hover:hover)').matches) {
+    var lb = document.createElement('div');
+    lb.className = 'lightbox';
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.setAttribute('aria-label', 'Screenshot');
+    var lbImg = document.createElement('img');
+    lb.appendChild(lbImg);
+    document.body.appendChild(lb);
+
+    function openLightbox(src, alt) {
+      lbImg.src = src;
+      lbImg.alt = alt || '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    shots.forEach(function(shot) {
+      var img = shot.querySelector('img');
+      if (!img) return;
+      shot.addEventListener('click', function() { openLightbox(img.src, img.alt); });
+    });
+
+    lb.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
+
 })();
