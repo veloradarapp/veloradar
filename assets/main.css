@@ -88,8 +88,9 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 40px
 .draft-badge{background:rgba(255,159,10,.12);border:1px solid rgba(255,159,10,.3);color:var(--warn);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:980px}
 .phone-shots{display:flex;gap:20px;align-items:flex-start}
 .phone-shot{border-radius:38px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.08);flex-shrink:0}
-.phone-shot img{display:block;width:220px;height:auto}
-.phone-shot--offset{margin-top:40px}
+.phone-shot img{display:block;width:180px;height:auto}
+.phone-shot--offset{margin-top:30px}
+.phone-shot--offset2{margin-top:60px}
 .shots-note{font-size:12px;color:var(--text3);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
 
 /* ── SECTIONS ── */
@@ -233,9 +234,10 @@ main{max-width:880px;margin:0 auto;padding:80px 24px 100px;display:grid;grid-tem
   .btn-primary,.btn-secondary{width:100%;justify-content:center}
   .hero h1{font-size:clamp(30px,7.5vw,44px)}
   .hero-visual{margin-top:40px}
-  .phone-shot img{width:140px}
-  .phone-shot--offset{margin-top:20px}
-  .phone-shots{gap:12px}
+  .phone-shot img{width:110px}
+  .phone-shot--offset{margin-top:16px}
+  .phone-shot--offset2{margin-top:32px}
+  .phone-shots{gap:10px}
   footer{padding:40px 20px 90px}
   .f-links{gap:10px 16px}
 }
