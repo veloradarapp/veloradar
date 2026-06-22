@@ -18,7 +18,7 @@
     en: {
       features: 'Features', compare: 'Compare', hardware: 'Hardware',
       privacy: 'Privacy', support: 'Support', cta: 'Get the app',
-      open: 'Open menu', close: 'Close menu', lang: 'Language',
+      open: 'Open menu', close: 'Close menu', lang: 'Language', skip: 'Skip to main content',
       footer: { privacy: 'Privacy', support: 'Support', terms: 'Terms',
         safety: 'Safety', changelog: 'Changelog', roadmap: 'Roadmap' },
       copy: '&copy; 2026 VeloRadar &middot; Built in the Czech Republic &middot; Not affiliated with Bafang, Garmin, or Apple.',
@@ -33,7 +33,7 @@
       cta: '&#1057;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100;',
       open: '&#1054;&#1090;&#1082;&#1088;&#1099;&#1090;&#1100; &#1084;&#1077;&#1085;&#1102;',
       close: '&#1047;&#1072;&#1082;&#1088;&#1099;&#1090;&#1100; &#1084;&#1077;&#1085;&#1102;',
-      lang: '&#1071;&#1079;&#1099;&#1082;',
+      lang: '&#1071;&#1079;&#1099;&#1082;', skip: '&#1055;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1082; &#1086;&#1089;&#1085;&#1086;&#1074;&#1085;&#1086;&#1084;&#1091; &#1089;&#1086;&#1076;&#1077;&#1088;&#1078;&#1080;&#1084;&#1086;&#1084;&#1091;',
       footer: {
         privacy: '&#1050;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100;',
         support: '&#1055;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1072;',
@@ -48,7 +48,7 @@
     de: {
       features: 'Funktionen', compare: 'Vergleich', hardware: 'Hardware',
       privacy: 'Datenschutz', support: 'Support', cta: 'App laden',
-      open: 'Men&uuml; &ouml;ffnen', close: 'Men&uuml; schlie&szlig;en', lang: 'Sprache',
+      open: 'Men&uuml; &ouml;ffnen', close: 'Men&uuml; schlie&szlig;en', lang: 'Sprache', skip: 'Zum Hauptinhalt springen',
       footer: { privacy: 'Datenschutz', support: 'Support', terms: 'Nutzungsbedingungen',
         safety: 'Sicherheit', changelog: 'Changelog', roadmap: 'Roadmap' },
       copy: '&copy; 2026 VeloRadar &middot; Entwickelt in Tschechien &middot; Nicht mit Bafang, Garmin oder Apple verbunden.',
@@ -57,7 +57,7 @@
     fr: {
       features: 'Fonctionnalit&eacute;s', compare: 'Comparer', hardware: 'Mat&eacute;riel',
       privacy: 'Confidentialit&eacute;', support: 'Assistance', cta: "Obtenir l'app",
-      open: 'Ouvrir le menu', close: 'Fermer le menu', lang: 'Langue',
+      open: 'Ouvrir le menu', close: 'Fermer le menu', lang: 'Langue', skip: 'Aller au contenu principal',
       footer: { privacy: 'Confidentialit&eacute;', support: 'Assistance', terms: 'Conditions',
         safety: 'S&eacute;curit&eacute;', changelog: 'Historique', roadmap: 'Feuille de route' },
       copy: '&copy; 2026 VeloRadar &middot; D&eacute;velopp&eacute; en R&eacute;publique tch&egrave;que &middot; Non affili&eacute; &agrave; Bafang, Garmin ou Apple.',
@@ -66,7 +66,7 @@
     it: {
       features: 'Funzionalit&agrave;', compare: 'Confronto', hardware: 'Hardware',
       privacy: 'Privacy', support: 'Supporto', cta: "Scarica l'app",
-      open: 'Apri menu', close: 'Chiudi menu', lang: 'Lingua',
+      open: 'Apri menu', close: 'Chiudi menu', lang: 'Lingua', skip: 'Vai al contenuto principale',
       footer: { privacy: 'Privacy', support: 'Supporto', terms: 'Termini',
         safety: 'Sicurezza', changelog: 'Changelog', roadmap: 'Roadmap' },
       copy: '&copy; 2026 VeloRadar &middot; Sviluppato in Repubblica Ceca &middot; Non affiliato con Bafang, Garmin o Apple.',
@@ -102,7 +102,7 @@
       return '<li><a href="' + href + '"' + active + '>' + label + '</a></li>';
     }
 
-    return '<a class="skip-nav" href="#main-content">Skip to main content</a>' +
+    return '<a class="skip-nav" href="#main-content">' + t.skip + '</a>' +
       '<nav role="navigation" aria-label="Main navigation">' +
       '<a class="nav-logo" href="' + home + '" aria-label="VeloRadar">' +
       '<img src="/assets/icon.png" alt="" width="28" height="28"><span>VeloRadar</span></a>' +
