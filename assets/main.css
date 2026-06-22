@@ -84,11 +84,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 40px
 .btn-secondary{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text);font-size:16px;font-weight:500;padding:15px 28px;border-radius:980px;text-decoration:none;transition:background .2s,transform .15s}
 .btn-secondary:hover{background:rgba(255,255,255,.12);transform:translateY(-1px)}
 .hero-visual{margin-top:72px;width:100%;max-width:720px}
-.hero-illust{width:100%;aspect-ratio:720/420;background:linear-gradient(180deg,rgba(48,209,88,.04) 0%,transparent 100%);border:1px solid var(--border);border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;gap:16px;text-align:center}
-.hero-illust svg{width:96px;height:96px}
-.hero-illust h3{font-size:20px;font-weight:600}
-.hero-illust p{font-size:14px;color:var(--text2);max-width:360px;margin:0}
-.hero-illust .small{font-size:12px;color:var(--text3);margin-top:8px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.screenshots-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.draft-badge{background:rgba(255,159,10,.12);border:1px solid rgba(255,159,10,.3);color:var(--warn);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:980px}
+.phone-shots{display:flex;gap:20px;align-items:flex-start}
+.phone-shot{border-radius:38px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.08);flex-shrink:0}
+.phone-shot img{display:block;width:220px;height:auto}
+.phone-shot--offset{margin-top:40px}
+.shots-note{font-size:12px;color:var(--text3);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
 
 /* ── SECTIONS ── */
 .section-label{font-size:12px;font-weight:700;color:var(--green);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -230,8 +232,8 @@ main{max-width:880px;margin:0 auto;padding:80px 24px 100px;display:grid;grid-tem
   nav{padding:0 16px}
   .btn-primary,.btn-secondary{width:100%;justify-content:center}
   .hero h1{font-size:clamp(30px,7.5vw,44px)}
-  .hero-illust{padding:28px 20px;aspect-ratio:auto}
-  .hero-illust svg{width:72px;height:72px}
+  .phone-shot img{width:155px}
+  .phone-shot--offset{margin-top:24px}
   footer{padding:40px 20px 90px}
   .f-links{gap:10px 16px}
 }
