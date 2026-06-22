@@ -17,7 +17,7 @@
   var T = {
     en: {
       features: 'Features', compare: 'Compare', hardware: 'Hardware',
-      privacy: 'Privacy', support: 'Support', cta: 'Get the app',
+      privacy: 'Privacy', support: 'Support', cta: 'Coming Soon',
       open: 'Open menu', close: 'Close menu', lang: 'Language', skip: 'Skip to main content',
       footer: { privacy: 'Privacy', support: 'Support', terms: 'Terms',
         safety: 'Safety', changelog: 'Changelog', roadmap: 'Roadmap' },
@@ -30,7 +30,7 @@
       hardware: '&#1057;&#1086;&#1074;&#1084;&#1077;&#1089;&#1090;&#1080;&#1084;&#1086;&#1089;&#1090;&#1100;',
       privacy: '&#1055;&#1088;&#1080;&#1074;&#1072;&#1090;&#1085;&#1086;&#1089;&#1090;&#1100;',
       support: '&#1055;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1072;',
-      cta: '&#1057;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100;',
+      cta: 'Coming Soon',
       open: '&#1054;&#1090;&#1082;&#1088;&#1099;&#1090;&#1100; &#1084;&#1077;&#1085;&#1102;',
       close: '&#1047;&#1072;&#1082;&#1088;&#1099;&#1090;&#1100; &#1084;&#1077;&#1085;&#1102;',
       lang: '&#1071;&#1079;&#1099;&#1082;', skip: '&#1055;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1082; &#1086;&#1089;&#1085;&#1086;&#1074;&#1085;&#1086;&#1084;&#1091; &#1089;&#1086;&#1076;&#1077;&#1088;&#1078;&#1080;&#1084;&#1086;&#1084;&#1091;',
@@ -47,7 +47,7 @@
     },
     de: {
       features: 'Funktionen', compare: 'Vergleich', hardware: 'Hardware',
-      privacy: 'Datenschutz', support: 'Support', cta: 'App laden',
+      privacy: 'Datenschutz', support: 'Support', cta: 'Coming Soon',
       open: 'Men&uuml; &ouml;ffnen', close: 'Men&uuml; schlie&szlig;en', lang: 'Sprache', skip: 'Zum Hauptinhalt springen',
       footer: { privacy: 'Datenschutz', support: 'Support', terms: 'Nutzungsbedingungen',
         safety: 'Sicherheit', changelog: 'Changelog', roadmap: 'Roadmap' },
@@ -56,7 +56,7 @@
     },
     fr: {
       features: 'Fonctionnalit&eacute;s', compare: 'Comparer', hardware: 'Mat&eacute;riel',
-      privacy: 'Confidentialit&eacute;', support: 'Assistance', cta: "Obtenir l'app",
+      privacy: 'Confidentialit&eacute;', support: 'Assistance', cta: 'Coming Soon',
       open: 'Ouvrir le menu', close: 'Fermer le menu', lang: 'Langue', skip: 'Aller au contenu principal',
       footer: { privacy: 'Confidentialit&eacute;', support: 'Assistance', terms: 'Conditions',
         safety: 'S&eacute;curit&eacute;', changelog: 'Historique', roadmap: 'Feuille de route' },
@@ -65,7 +65,7 @@
     },
     it: {
       features: 'Funzionalit&agrave;', compare: 'Confronto', hardware: 'Hardware',
-      privacy: 'Privacy', support: 'Supporto', cta: "Scarica l'app",
+      privacy: 'Privacy', support: 'Supporto', cta: 'Coming Soon',
       open: 'Apri menu', close: 'Chiudi menu', lang: 'Lingua', skip: 'Vai al contenuto principale',
       footer: { privacy: 'Privacy', support: 'Supporto', terms: 'Termini',
         safety: 'Sicurezza', changelog: 'Changelog', roadmap: 'Roadmap' },
@@ -126,6 +126,8 @@
       '<li><a href="' + home + '#compatibility">' + t.hardware + '</a></li>' +
       '<li><a href="' + priv + '"' + (pageSlug === 'privacy' ? ' class="active"' : '') + '>' + t.privacy + '</a></li>' +
       '<li><a href="' + supp + '"' + (pageSlug === 'support' ? ' class="active"' : '') + '>' + t.support + '</a></li>' +
+      '<li><a href="' + langBase + '/changelog/"' + (pageSlug === 'changelog' ? ' class="active"' : '') + '>' + t.footer.changelog + '</a></li>' +
+      '<li><a href="' + langBase + '/roadmap/"' + (pageSlug === 'roadmap' ? ' class="active"' : '') + '>' + t.footer.roadmap + '</a></li>' +
       '<li><a class="mobile-cta" href="' + home + '#download">' + t.cta + '</a></li>' +
       '<li class="lang-divider" role="separator"><span>' + t.lang + '</span></li>' +
       ['en', 'fr', 'de', 'ru', 'it'].map(function(l) {
