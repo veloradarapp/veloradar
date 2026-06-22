@@ -1,7 +1,7 @@
 {
   "name": "VeloRadar",
   "short_name": "VeloRadar",
-  "description": "E-bike dashboard for Bafang BBS02 with EKD01-BF display",
+  "description": "E-bike dashboard with rear-view radar for iPhone",
   "start_url": "/",
   "display": "browser",
   "background_color": "#0a0a0f",
